@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/61f405be4a.js" crossorigin="anonymous"></script>
+    <title>Home Store - Contacto</title>
+</head>
+<body>
+    <header class="background__hf">
+        <img src="../img/logo_hs.png" alt="Logo de Home Store" width="150px">
+    </header>
+    <nav>
+        <ul class="flex__nav">
+            <li class="list__navegation"><a href="../index.html" class="a__navigation freeman-regular"><i class="fa-solid fa-house fa-lg" style="color: #f5deb3;"></i>INICIO</a></li>
+            <li class="list__navigation"><a href="./productos.html" class="a__navigation freeman-regular"><i class="fa-solid fa-cart-shopping" style="color: #f5deb3;"></i>PRODCTOS</a></li>
+            <li class="list__navegation"><a href="./contacto.html" class="a__navigation freeman-regular"><i class="fa-solid fa-address-book fa-lg" style="color: #f5deb3;"></i>CONTACTOS</a></li>
+        </ul>
+    </nav>
+    <main class="background__hf">
+        <h2 class="freeman-regular">Contacto</h2>
+        <form action="https://formspree.io/f/mblaawlr" method="post" autocomplete="on">
+            <label for="name" class="freeman-regular"> Nombre:
+                <input type="text" id="name" name="name" class="freeman-regular" placeholder="Tu nombre" required>
+            </label>
+
+            <label for="email" class="freeman-regular"> Correo electrónico:
+                <input type="email" id="email" name="email" class="freeman-regular" placeholder="usuario@ejemplo.com" required>
+            </label>
+
+            <label for="message" class="freeman-regular"> Mensaje:
+                <textarea name="message" id="message" cols="50" rows="10" class="freeman-regular" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </label>
+
+            <button type="submit" class="freeman-regular">Enviar</button> <button type="reset" class="freeman-regular">Limpiar</button>
+        </form>
+        <table border="1" class="freeman-regular">
+
+            <caption>Tabla de usuarios interesados</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Mensaje cortito</th>
+                    <th colspan="2">Estado del mensaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Carlos</td>
+                    <td>Bustamante.carlos@gmail.com</td>
+                    <td>Hola! Estoy interesado en el servicio de Desarrollo Web.</td>
+                    <td>Recibido</td>
+                    <td>Contactado</td>
+                </tr>
+                <tr>
+                    <td>Ayelén</td>
+                    <td>Ayelen.rodriguez@gmail.com</td>
+                    <td>Hola! Quisiera saber presupuestos para la obtención del servicio web.</td>
+                    <td>Recibido</td>
+                    <td>Pendiente de respuesta</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="background__hf">
+        <p class="align-center freeman-regular">© 2025 Web Service Development. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,173 @@
+* {
+    margin: 1px;
+    padding: 5px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 62.5%;
+}
+
+li {
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2.0rem;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+nav {
+    background-color: #00334D;
+    padding: 0%;
+}
+
+.background__hf {
+    background-color: rgb(245, 222, 179, 0.27);
+}
+
+header {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: #00334D;
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00334D;
+    padding: 0;
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+form {
+    margin: 20px;
+}
+
+label {
+    font-size: 1.8rem;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+button {
+    font-size: 1.8rem;
+}
+
+caption {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+th {
+    font-size: 1.8rem;
+}
+
+td {
+    font-size: 1.8rem;
+}
+
+.article__border {
+    border:solid #00334D 0.2em
+}
+
+.article__product {
+    width: 30%;
+}
+
+.img__productos {
+    width: 100%;
+}
+
+.align-center {
+    text-align: center;
+    color: #00334D;
+}
+
+.list__navegation {
+    list-style: none;
+}
+
+.a__navigation {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(245, 222, 179);
+}
+
+/* Google Font */
+.freeman-regular {
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Flex box */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.flex__nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Grid */
+.reseñas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    padding: 10px;
+}
+
+.card {
+    padding: 5px;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Media Query*/
+
+@media (max-width: 768px) {
+    .reseñas {
+        grid-template-columns: auto;
+    }
+}
+
+/* focus */
+input:focus, textarea:focus {
+    border: 3px solid blue;
+    transition: 1s;
+}
