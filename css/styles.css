@@ -58,6 +58,13 @@ main {
     flex: 1;
 }
 
+.video__container {
+    display: flex;
+  justify-content: center; /* centra horizontal */
+  align-items: center;     /* centra vertical (si le das altura al contenedor) */
+  width: 100%;   
+}
+
 footer {
     margin-top: auto;
 }
