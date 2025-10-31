@@ -23,6 +23,9 @@
     </nav>
     <main class="background__hf">
         <h2 class="freeman-regular">¡Beneficios exclusivos! 💥</h2>
+        <div id="contador-carrito"><p>Productos en carrito: 0</p></div>
+        <button id="vaciar-carrito">Vaciar carrito</button>
+        <div id="mensaje-cargando"><p>Cargando productos, por favor espere...</p></div>
         <section>
             <article>
                 <img src="../img/Descuento en Lunes y Viernes.png" alt="Descuento Lunes y Viernes 15%" width="30%">
@@ -30,42 +33,7 @@
             </article>
         </section>
         <section class="productos" id="productos-container">
-            <article class="article__product">
-                <img src="../img/toallon.png" alt="Toallón" class="img__productos">
-                <h3 class="freeman-regular">Toallón de felpa</h3>
-                <ul>
-                    <li class="freeman-regular">Formación de Rizo (Bucle)</li>
-                    <li class="freeman-regular">Alta Capacidad de Absorción</li>
-                    <li class="freeman-regular">Suavidad y Confort al Tacto</li>
-                    <li class="freeman-regular">Durabilidad y Resistencia</li>
-                </ul>
-                <h3 class="freeman-regular">$10000</h3>
-                <button><i class="fa-solid fa-cart-shopping" style="color: #00334D;"></i></button>
-            </article>
-            <article class="article__product">
-                <img src="../img/luz_de_mesa.png" alt="Luz de mesa de cuarto" class="img__productos">
-                <h3 class="freeman-regular">Luz de mesa de cuarto de madera de Roble</h3>
-                <ul>
-                    <li class="freeman-regular">Portátil</li>
-                    <li class="freeman-regular">Aporta elegancia discreta</li>
-                    <li class="freeman-regular">Gran durabilidad y estabilidad</li>
-                    <li class="freeman-regular">Proporciona una luz ambiental difusa y agradable</li>
-                </ul>
-                <h3 class="freeman-regular">$20000</h3>
-                <button><i class="fa-solid fa-cart-shopping" style="color: #00334D;"></i></button>
-            </article>
-            <article class="article__product">
-                <img src="../img/Canasta_mimbre.png" alt="Mantenimiento del proyecto" class="img__productos">
-                <h3 class="cossette-titre-bold">Canasta de Mimbre</h3>
-                <ul>
-                    <li class="freeman-regular">Fabricado con fibras naturales como Mimbre</li>
-                    <li class="freeman-regular">Estética Rústica-Moderna</li>
-                    <li class="freeman-regular">Robusta y resistente</li>
-                    <li class="freeman-regular">Ecológica</li>
-                </ul>
-                <h3 class="freeman-regular">$30000</h3>
-                <button><i class="fa-solid fa-cart-shopping" style="color: #00334D;"></i></button>
-            </article>
+            <!-- Con js manipularemos el DOM para cargar los productos de API -->
         </section>
     </main>
     <footer class="background__hf">
