@@ -193,3 +193,29 @@ input:focus, textarea:focus {
     border: 3px solid blue;
     transition: 1s;
 }
+
+/* CSS ID */
+#contador-carrito {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#vaciar-carrito {
+    margin: 10px 20px;
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#vaciar-carrito:hover {
+    background-color: darkred;
+}
+
+#mensaje-cargando {
+    font-style: italic;
+    color: #555;
+    margin: 20px;
+}

@@ -1,5 +1,6 @@
-export async function cargar_productos(){
-    fetch('https://fakestoreapi.com/products')
+
+export function cargar_productos(){
+    return fetch('https://fakestoreapi.com/products')
   .then(response => response.json())
   .then(productos => {
     const contenedor = document.getElementById('productos-container');
@@ -17,5 +18,8 @@ export async function cargar_productos(){
 
       contenedor.appendChild(card);
     });
-  });
-}
+  })
+  .catch(error => {
+    document.getElementById('mensaje-cargando').textContent = "Ocurrió un error al obtener los productos: " + error.message;
+  })
+};
