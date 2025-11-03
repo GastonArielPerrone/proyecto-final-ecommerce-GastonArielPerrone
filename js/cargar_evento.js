@@ -5,7 +5,7 @@ export function cargarEventosAgregar(){
 
     botones.forEach(boton => {
         boton.addEventListener('click', () => {
-            agregarAlCarrito(boton.getAttribute('data-id'));
+            agregarAlCarrito(parseInt(boton.getAttribute('data-id')));
         })
     })
 }

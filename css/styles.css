@@ -154,7 +154,7 @@ td {
 }
 
 /* Flex box */
-.productos {
+.productos, .carrito {
     display: flex;
     flex-wrap: wrap;
     gap: 1px;
