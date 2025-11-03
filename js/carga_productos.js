@@ -11,7 +11,7 @@ export function cargar_productos(){
     productos.forEach(producto => {
       const card = document.createElement('article');
       card.classList.add("article__product");
-      card.innerHTML = `<img src="${producto.image}" alt="${producto.title}" width="150">
+      card.innerHTML = `<img src="${producto.image}" alt="${producto.title}" width="150" class="img__productos">
       <h3>${producto.title}</h3>
       <p>${producto.price}</p>
       <button data-id="${producto.id}">Añadir al carrito</button>`;
