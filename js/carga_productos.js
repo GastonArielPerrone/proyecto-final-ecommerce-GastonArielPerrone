@@ -13,7 +13,7 @@ export function cargar_productos(){
       card.classList.add("article__product");
       card.innerHTML = `<img src="${producto.image}" alt="${producto.title}" width="150" class="img__productos">
       <h3>${producto.title}</h3>
-      <p>${producto.price}</p>
+      <p> U$D ${producto.price}</p>
       <button data-id="${producto.id}">Añadir al carrito</button>`;
 
       contenedor.appendChild(card);
