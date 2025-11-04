@@ -1,7 +1,12 @@
 
-export function cargar_productos(){
+export async function cargar_productos(){
     return fetch('https://fakestoreapi.com/products')
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok){
+      throw new Error(`Error del servidor: ${response.status}`);
+    }
+    return response.json();
+  })
   .then(productos => {
     const contenedor = document.getElementById('productos-container');
     const mensajeCargando = document.getElementById('mensaje-cargando');
