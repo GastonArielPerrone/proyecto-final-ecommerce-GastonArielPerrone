@@ -6,7 +6,7 @@ export function cargarProductosAgregados() {
     const contenedor_carrito = document.getElementById('carrito-container');
     const mensajeCargando = document.getElementById('mensaje-cargando');
 
-    fetch('https://fakestoreapi.com/products')
+    fetch('../js/productos.json')
         .then(response => response.json())
         .then(productos => {
             if (mensajeCargando) {
@@ -19,9 +19,9 @@ export function cargarProductosAgregados() {
             productosEnCarrito.forEach(producto => {
                 const card = document.createElement('article');
                 card.classList.add("article__product");
-                card.innerHTML = `<img src="${producto.image}" alt="${producto.title}" class="img__productos">
-                <h3>${producto.title}</h3>
-                <p> U$D ${producto.price}</p>
+                card.innerHTML = `<img src="${producto.img}" alt="${producto.titulo}" class="img__productos">
+                <h3>${producto.titulo}</h3>
+                <p> U$D ${producto.precio}</p>
                 <button class="eliminar-producto" data-id="${producto.id}">Eliminar</button>`;
 
                 contenedor_carrito.appendChild(card);

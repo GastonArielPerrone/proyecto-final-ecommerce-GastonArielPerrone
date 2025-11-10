@@ -105,7 +105,9 @@ td {
 .article__product {
     width: 30%;
     border: 1px black solid;
+    background-color: #f7f7f7;
     border-radius: 15px;
+    box-shadow: #555 5px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;

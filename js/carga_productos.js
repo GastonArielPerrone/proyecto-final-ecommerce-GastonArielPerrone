@@ -1,6 +1,6 @@
 
 export async function cargar_productos(){
-    return fetch('https://fakestoreapi.com/products')
+    return fetch('../js/productos.json')
   .then(response => {
     if (!response.ok){
       throw new Error(`Error del servidor: ${response.status}`);
@@ -8,6 +8,7 @@ export async function cargar_productos(){
     return response.json();
   })
   .then(productos => {
+    console.log(productos);
     const contenedor = document.getElementById('productos-container');
     const mensajeCargando = document.getElementById('mensaje-cargando');
 
@@ -16,9 +17,9 @@ export async function cargar_productos(){
     productos.forEach(producto => {
       const card = document.createElement('article');
       card.classList.add("article__product");
-      card.innerHTML = `<img src="${producto.image}" alt="${producto.title}" class="img__productos">
-      <h3>${producto.title}</h3>
-      <p> U$D ${producto.price}</p>
+      card.innerHTML = `<img src="${producto.img}" alt="${producto.titulo}" class="img__productos">
+      <h3>${producto.titulo}</h3>
+      <p> U$D ${producto.precio}</p>
       <button data-id="${producto.id}">Añadir al carrito</button>`;
 
       contenedor.appendChild(card);

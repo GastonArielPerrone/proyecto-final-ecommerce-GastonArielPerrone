@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "titulo": "Sofá Reclinable Masajeador Premium de Piel Sintética – Con Control Remoto y Función de Calor",
+        "img": "../img/API/sofa_masajeador.png",
+        "precio": 20.5
+    },
+    {
+        "id": 2,
+        "titulo": "Lámpara de Lava Clásica Retro – Luz Ambiental Decorativa con Cera Roja y Base Metálica",
+        "img": "../img/API/lampara_lava.png",
+        "precio": 15.2
+    },
+    {
+        "id": 3, 
+        "titulo": "Alfombra de Piel Sintética Premium – Suave, Antideslizante y Decorativa para Hogar",
+        "img": "../img/API/alfombra_piel.png",
+        "precio": 8.95
+    }
+]
