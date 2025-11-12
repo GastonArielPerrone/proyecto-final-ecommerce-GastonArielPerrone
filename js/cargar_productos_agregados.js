@@ -5,6 +5,13 @@ export function cargarProductosAgregados() {
     const carrito = obtenerCarrito();
     const contenedor_carrito = document.getElementById('carrito-container');
     const mensajeCargando = document.getElementById('mensaje-cargando');
+    const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
+
+    if (carrito.length === 0) {
+        vaciarCarritoBtn.style.display = 'none';
+    } else {
+        vaciarCarritoBtn.style.display = 'block';
+    }
 
     fetch('../js/productos.json')
         .then(response => response.json())
